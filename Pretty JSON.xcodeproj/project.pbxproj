@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4036D1E5BCF09391E8AA1C88 /* Pods_Pretty_JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0F6394669C35E76F227CFC /* Pods_Pretty_JSON.framework */; };
+		A13AF8B51F8B2F22003AFB23 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13AF8B41F8B2F21003AFB23 /* NSViewExtensions.swift */; };
+		C129DACE1F8572780007C8CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DACD1F8572780007C8CE /* AppDelegate.swift */; };
+		C129DAD01F8572780007C8CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C129DACF1F8572780007C8CE /* Assets.xcassets */; };
+		C129DADF1F8576C60007C8CE /* Jay.swiftmodule in Frameworks */ = {isa = PBXBuildFile; fileRef = C129DADE1F8576C60007C8CE /* Jay.swiftmodule */; };
+		C129DAE11F8576E60007C8CE /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DAE01F8576E60007C8CE /* Parser.swift */; };
+		C129DAE31F85774D0007C8CE /* ParsingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DAE21F85774D0007C8CE /* ParsingController.swift */; };
+		C129DAE51F85A62F0007C8CE /* RealApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DAE41F85A62F0007C8CE /* RealApplication.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0996F6AB8D6821FE3E244C21 /* Pods-Pretty JSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pretty JSON.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pretty JSON/Pods-Pretty JSON.debug.xcconfig"; sourceTree = "<group>"; };
+		95BE1EE7C9B43C7EAC798269 /* Pods-Pretty JSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pretty JSON.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pretty JSON/Pods-Pretty JSON.release.xcconfig"; sourceTree = "<group>"; };
+		A13AF8B41F8B2F21003AFB23 /* NSViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewExtensions.swift; sourceTree = "<group>"; };
+		C129DACA1F8572780007C8CE /* Pretty JSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pretty JSON.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C129DACD1F8572780007C8CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C129DACF1F8572780007C8CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C129DAD41F8572780007C8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C129DAD51F8572780007C8CE /* Pretty_JSON.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pretty_JSON.entitlements; sourceTree = "<group>"; };
+		C129DADB1F8574E30007C8CE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		C129DADC1F8574E80007C8CE /* Package.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Package.resolved; sourceTree = "<group>"; };
+		C129DADE1F8576C60007C8CE /* Jay.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; name = Jay.swiftmodule; path = ".build/x86_64-apple-macosx10.10/debug/Jay.swiftmodule"; sourceTree = "<group>"; };
+		C129DAE01F8576E60007C8CE /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		C129DAE21F85774D0007C8CE /* ParsingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingController.swift; sourceTree = "<group>"; };
+		C129DAE41F85A62F0007C8CE /* RealApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealApplication.swift; sourceTree = "<group>"; };
+		CD0F6394669C35E76F227CFC /* Pods_Pretty_JSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pretty_JSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C129DAC71F8572780007C8CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C129DADF1F8576C60007C8CE /* Jay.swiftmodule in Frameworks */,
+				4036D1E5BCF09391E8AA1C88 /* Pods_Pretty_JSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76C8AC55E6CFDA4E3BA0B58E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0996F6AB8D6821FE3E244C21 /* Pods-Pretty JSON.debug.xcconfig */,
+				95BE1EE7C9B43C7EAC798269 /* Pods-Pretty JSON.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C129DAC11F8572780007C8CE = {
+			isa = PBXGroup;
+			children = (
+				C129DADB1F8574E30007C8CE /* Package.swift */,
+				C129DADC1F8574E80007C8CE /* Package.resolved */,
+				C129DACC1F8572780007C8CE /* Pretty JSON */,
+				C129DACB1F8572780007C8CE /* Products */,
+				C129DADD1F8576C50007C8CE /* Frameworks */,
+				76C8AC55E6CFDA4E3BA0B58E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C129DACB1F8572780007C8CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C129DACA1F8572780007C8CE /* Pretty JSON.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C129DACC1F8572780007C8CE /* Pretty JSON */ = {
+			isa = PBXGroup;
+			children = (
+				C129DACD1F8572780007C8CE /* AppDelegate.swift */,
+				C129DACF1F8572780007C8CE /* Assets.xcassets */,
+				C129DAD41F8572780007C8CE /* Info.plist */,
+				C129DAD51F8572780007C8CE /* Pretty_JSON.entitlements */,
+				C129DAE01F8576E60007C8CE /* Parser.swift */,
+				C129DAE21F85774D0007C8CE /* ParsingController.swift */,
+				C129DAE41F85A62F0007C8CE /* RealApplication.swift */,
+				A13AF8B41F8B2F21003AFB23 /* NSViewExtensions.swift */,
+			);
+			path = "Pretty JSON";
+			sourceTree = "<group>";
+		};
+		C129DADD1F8576C50007C8CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C129DADE1F8576C60007C8CE /* Jay.swiftmodule */,
+				CD0F6394669C35E76F227CFC /* Pods_Pretty_JSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C129DAC91F8572780007C8CE /* Pretty JSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C129DAD81F8572780007C8CE /* Build configuration list for PBXNativeTarget "Pretty JSON" */;
+			buildPhases = (
+				E4E50D8A6A7BBEE8F2228F9E /* [CP] Check Pods Manifest.lock */,
+				C129DAC61F8572780007C8CE /* Sources */,
+				C129DAC71F8572780007C8CE /* Frameworks */,
+				C129DAC81F8572780007C8CE /* Resources */,
+				693DD2C12C8907B38066FF23 /* [CP] Embed Pods Frameworks */,
+				36F92AA756645DADAD757766 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pretty JSON";
+			productName = "Pretty JSON";
+			productReference = C129DACA1F8572780007C8CE /* Pretty JSON.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C129DAC21F8572780007C8CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Andrew Crookston";
+				TargetAttributes = {
+					C129DAC91F8572780007C8CE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C129DAC51F8572780007C8CE /* Build configuration list for PBXProject "Pretty JSON" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C129DAC11F8572780007C8CE;
+			productRefGroup = C129DACB1F8572780007C8CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C129DAC91F8572780007C8CE /* Pretty JSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C129DAC81F8572780007C8CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C129DAD01F8572780007C8CE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36F92AA756645DADAD757766 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pretty JSON/Pods-Pretty JSON-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		693DD2C12C8907B38066FF23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pretty JSON/Pods-Pretty JSON-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pretty JSON/Pods-Pretty JSON-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4E50D8A6A7BBEE8F2228F9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pretty JSON-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C129DAC61F8572780007C8CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C129DAE51F85A62F0007C8CE /* RealApplication.swift in Sources */,
+				A13AF8B51F8B2F22003AFB23 /* NSViewExtensions.swift in Sources */,
+				C129DAE31F85774D0007C8CE /* ParsingController.swift in Sources */,
+				C129DAE11F8576E60007C8CE /* Parser.swift in Sources */,
+				C129DACE1F8572780007C8CE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C129DAD61F8572780007C8CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C129DAD71F8572780007C8CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		C129DAD91F8572780007C8CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0996F6AB8D6821FE3E244C21 /* Pods-Pretty JSON.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Pretty JSON/Pretty_JSON.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Pretty JSON/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.crookston.Pretty-JSON";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/.build/debug";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		C129DADA1F8572780007C8CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95BE1EE7C9B43C7EAC798269 /* Pods-Pretty JSON.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Pretty JSON/Pretty_JSON.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Pretty JSON/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.crookston.Pretty-JSON";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/.build/debug";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C129DAC51F8572780007C8CE /* Build configuration list for PBXProject "Pretty JSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C129DAD61F8572780007C8CE /* Debug */,
+				C129DAD71F8572780007C8CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C129DAD81F8572780007C8CE /* Build configuration list for PBXNativeTarget "Pretty JSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C129DAD91F8572780007C8CE /* Debug */,
+				C129DADA1F8572780007C8CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C129DAC21F8572780007C8CE /* Project object */;
+}

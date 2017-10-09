@@ -1,0 +1,21 @@
+PODS:
+  - Cartography (2.0.0)
+
+DEPENDENCIES:
+  - Cartography (from `https://github.com/robb/Cartography`)
+
+EXTERNAL SOURCES:
+  Cartography:
+    :git: https://github.com/robb/Cartography
+
+CHECKOUT OPTIONS:
+  Cartography:
+    :commit: 6b1e8755ab4e1209dbde03ea0b2e04875ccd72fb
+    :git: https://github.com/robb/Cartography
+
+SPEC CHECKSUMS:
+  Cartography: 626358af52394115799d10d5ad03d6a5872239c9
+
+PODFILE CHECKSUM: 33c147201df9f6609af530e124cd9fbae12c8146
+
+COCOAPODS: 1.3.1
