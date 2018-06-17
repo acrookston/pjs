@@ -8,8 +8,8 @@
 
 import AppKit
 
-@objc final class RealApplication: NSApplication {
-    let realDelegate = AppDelegate()
+@objc final class Application: NSApplication {
+    private let realDelegate = AppDelegate()
 
     override func run() {
         let app = NSApplication.shared

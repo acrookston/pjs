@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4036D1E5BCF09391E8AA1C88 /* Pods_Pretty_JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0F6394669C35E76F227CFC /* Pods_Pretty_JSON.framework */; };
 		A13AF8B51F8B2F22003AFB23 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13AF8B41F8B2F21003AFB23 /* NSViewExtensions.swift */; };
+		A1B8B4A320D5DC5F001D066C /* ScrollingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8B4A220D5DC5F001D066C /* ScrollingTextView.swift */; };
 		C129DACE1F8572780007C8CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DACD1F8572780007C8CE /* AppDelegate.swift */; };
 		C129DAD01F8572780007C8CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C129DACF1F8572780007C8CE /* Assets.xcassets */; };
 		C129DADF1F8576C60007C8CE /* Jay.swiftmodule in Frameworks */ = {isa = PBXBuildFile; fileRef = C129DADE1F8576C60007C8CE /* Jay.swiftmodule */; };
 		C129DAE11F8576E60007C8CE /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DAE01F8576E60007C8CE /* Parser.swift */; };
-		C129DAE31F85774D0007C8CE /* ParsingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DAE21F85774D0007C8CE /* ParsingController.swift */; };
-		C129DAE51F85A62F0007C8CE /* RealApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DAE41F85A62F0007C8CE /* RealApplication.swift */; };
+		C129DAE31F85774D0007C8CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DAE21F85774D0007C8CE /* MainViewController.swift */; };
+		C129DAE51F85A62F0007C8CE /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DAE41F85A62F0007C8CE /* Application.swift */; };
+		C1BA9E9A20D47FDA009D8ADA /* IBMPlexMono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1BA9E9920D47FD9009D8ADA /* IBMPlexMono-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0996F6AB8D6821FE3E244C21 /* Pods-Pretty JSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pretty JSON.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pretty JSON/Pods-Pretty JSON.debug.xcconfig"; sourceTree = "<group>"; };
 		95BE1EE7C9B43C7EAC798269 /* Pods-Pretty JSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pretty JSON.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pretty JSON/Pods-Pretty JSON.release.xcconfig"; sourceTree = "<group>"; };
 		A13AF8B41F8B2F21003AFB23 /* NSViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewExtensions.swift; sourceTree = "<group>"; };
-		C129DACA1F8572780007C8CE /* Pretty JSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pretty JSON.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B8B4A220D5DC5F001D066C /* ScrollingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingTextView.swift; sourceTree = "<group>"; };
+		C129DACA1F8572780007C8CE /* PJs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PJs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C129DACD1F8572780007C8CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C129DACF1F8572780007C8CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C129DAD41F8572780007C8CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -30,9 +32,10 @@
 		C129DADC1F8574E80007C8CE /* Package.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Package.resolved; sourceTree = "<group>"; };
 		C129DADE1F8576C60007C8CE /* Jay.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; name = Jay.swiftmodule; path = ".build/x86_64-apple-macosx10.10/debug/Jay.swiftmodule"; sourceTree = "<group>"; };
 		C129DAE01F8576E60007C8CE /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		C129DAE21F85774D0007C8CE /* ParsingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingController.swift; sourceTree = "<group>"; };
-		C129DAE41F85A62F0007C8CE /* RealApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealApplication.swift; sourceTree = "<group>"; };
-		CD0F6394669C35E76F227CFC /* Pods_Pretty_JSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pretty_JSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C129DAE21F85774D0007C8CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C129DAE41F85A62F0007C8CE /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		C1BA9E9820D44257009D8ADA /* IBM-PLEX-LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "IBM-PLEX-LICENSE.md"; sourceTree = "<group>"; };
+		C1BA9E9920D47FD9009D8ADA /* IBMPlexMono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +44,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C129DADF1F8576C60007C8CE /* Jay.swiftmodule in Frameworks */,
-				4036D1E5BCF09391E8AA1C88 /* Pods_Pretty_JSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +74,7 @@
 		C129DACB1F8572780007C8CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C129DACA1F8572780007C8CE /* Pretty JSON.app */,
+				C129DACA1F8572780007C8CE /* PJs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,14 +82,17 @@
 		C129DACC1F8572780007C8CE /* Pretty JSON */ = {
 			isa = PBXGroup;
 			children = (
+				C1BA9E9820D44257009D8ADA /* IBM-PLEX-LICENSE.md */,
+				C1BA9E9920D47FD9009D8ADA /* IBMPlexMono-Regular.otf */,
 				C129DACD1F8572780007C8CE /* AppDelegate.swift */,
 				C129DACF1F8572780007C8CE /* Assets.xcassets */,
 				C129DAD41F8572780007C8CE /* Info.plist */,
 				C129DAD51F8572780007C8CE /* Pretty_JSON.entitlements */,
 				C129DAE01F8576E60007C8CE /* Parser.swift */,
-				C129DAE21F85774D0007C8CE /* ParsingController.swift */,
-				C129DAE41F85A62F0007C8CE /* RealApplication.swift */,
+				C129DAE21F85774D0007C8CE /* MainViewController.swift */,
+				C129DAE41F85A62F0007C8CE /* Application.swift */,
 				A13AF8B41F8B2F21003AFB23 /* NSViewExtensions.swift */,
+				A1B8B4A220D5DC5F001D066C /* ScrollingTextView.swift */,
 			);
 			path = "Pretty JSON";
 			sourceTree = "<group>";
@@ -96,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				C129DADE1F8576C60007C8CE /* Jay.swiftmodule */,
-				CD0F6394669C35E76F227CFC /* Pods_Pretty_JSON.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,24 +108,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C129DAC91F8572780007C8CE /* Pretty JSON */ = {
+		C129DAC91F8572780007C8CE /* PJs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C129DAD81F8572780007C8CE /* Build configuration list for PBXNativeTarget "Pretty JSON" */;
+			buildConfigurationList = C129DAD81F8572780007C8CE /* Build configuration list for PBXNativeTarget "PJs" */;
 			buildPhases = (
 				E4E50D8A6A7BBEE8F2228F9E /* [CP] Check Pods Manifest.lock */,
 				C129DAC61F8572780007C8CE /* Sources */,
 				C129DAC71F8572780007C8CE /* Frameworks */,
 				C129DAC81F8572780007C8CE /* Resources */,
-				693DD2C12C8907B38066FF23 /* [CP] Embed Pods Frameworks */,
-				36F92AA756645DADAD757766 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pretty JSON";
+			name = PJs;
 			productName = "Pretty JSON";
-			productReference = C129DACA1F8572780007C8CE /* Pretty JSON.app */;
+			productReference = C129DACA1F8572780007C8CE /* PJs.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +155,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C129DAC91F8572780007C8CE /* Pretty JSON */,
+				C129DAC91F8572780007C8CE /* PJs */,
 			);
 		};
 /* End PBXProject section */
@@ -164,45 +166,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C129DAD01F8572780007C8CE /* Assets.xcassets in Resources */,
+				C1BA9E9A20D47FDA009D8ADA /* IBMPlexMono-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		36F92AA756645DADAD757766 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pretty JSON/Pods-Pretty JSON-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		693DD2C12C8907B38066FF23 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Pretty JSON/Pods-Pretty JSON-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pretty JSON/Pods-Pretty JSON-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E4E50D8A6A7BBEE8F2228F9E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,9 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C129DAE51F85A62F0007C8CE /* RealApplication.swift in Sources */,
+				C129DAE51F85A62F0007C8CE /* Application.swift in Sources */,
+				A1B8B4A320D5DC5F001D066C /* ScrollingTextView.swift in Sources */,
 				A13AF8B51F8B2F22003AFB23 /* NSViewExtensions.swift in Sources */,
-				C129DAE31F85774D0007C8CE /* ParsingController.swift in Sources */,
+				C129DAE31F85774D0007C8CE /* MainViewController.swift in Sources */,
 				C129DAE11F8576E60007C8CE /* Parser.swift in Sources */,
 				C129DACE1F8572780007C8CE /* AppDelegate.swift in Sources */,
 			);
@@ -355,8 +326,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Pretty JSON/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "se.crookston.Pretty-JSON";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = se.crookston.pjs;
+				PRODUCT_NAME = "${TARGET_NAME}";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/.build/debug";
 				SWIFT_VERSION = 4.0;
 			};
@@ -372,8 +343,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Pretty JSON/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "se.crookston.Pretty-JSON";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = se.crookston.pjs;
+				PRODUCT_NAME = "${TARGET_NAME}";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/.build/debug";
 				SWIFT_VERSION = 4.0;
 			};
@@ -391,7 +362,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C129DAD81F8572780007C8CE /* Build configuration list for PBXNativeTarget "Pretty JSON" */ = {
+		C129DAD81F8572780007C8CE /* Build configuration list for PBXNativeTarget "PJs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C129DAD91F8572780007C8CE /* Debug */,

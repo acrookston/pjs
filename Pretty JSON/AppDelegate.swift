@@ -9,37 +9,36 @@
 import Foundation
 import Cocoa
 
-protocol NotificationName {
-    var name: Notification.Name { get }
+extension NSWindow {
+    static let desiredSize: CGFloat = 800
 }
-
-extension RawRepresentable where RawValue == String, Self: NotificationName {
-    var name: Notification.Name {
-        get {
-            return Notification.Name(self.rawValue)
-        }
-    }
-}
-
-enum Notifications: String, NotificationName {
-    case applicationTextCopy
-    case applicationTextPaste
-    case applicationTextSelectAll
-}
-
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+final class AppDelegate: NSObject, NSApplicationDelegate {
     var windowController: NSWindowController?
     var window: NSWindow?
 
-    var newWindow: NSWindow?
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        NSApp.mainMenu = mainMenu
+        window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: NSWindow.desiredSize, height: NSWindow.desiredSize),
+                          styleMask: [.titled, .closable, .resizable, .miniaturizable],
+                          backing: .buffered,
+                          defer: false)
+        window?.title = "PJs"
+        windowController = NSWindowController(window: window)
+        window?.contentViewController = MainViewController(sender: nil)
+        window?.makeKeyAndOrderFront(nil)
+        windowController?.showWindow(nil)
+    }
 
+    func applicationWillTerminate(_ aNotification: Notification) {
+        // Insert code here to tear down your application
+    }
+
+    private lazy var mainMenu: NSMenu = {
         let mainMenu = NSMenu()
-        let appMenuItem = NSMenuItem(title: "Pretty JSON", action: nil, keyEquivalent: "")
-        let appMenu = NSMenu(title: "Pretty JSON")
+        let appMenuItem = NSMenuItem(title: "PJs", action: nil, keyEquivalent: "")
+        let appMenu = NSMenu(title: "PJs")
         appMenu.addItem(withTitle: "Quit", action: #selector(terminateApplication), keyEquivalent: "q")
         appMenuItem.submenu = appMenu
 
@@ -54,22 +53,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         mainMenu.addItem(appMenuItem)
         mainMenu.addItem(editMenuItem)
 
-        NSApp.mainMenu = mainMenu
-
-        window = NSWindow(contentRect: NSRect(x: 0, y: 0, width: 800, height: 600),
-                          styleMask: [.titled, .closable, .resizable, .miniaturizable],
-                          backing: .buffered,
-                          defer: false)
-        window?.title = "Pretty JSON"
-        windowController = NSWindowController(window: window)
-        window?.contentViewController = ParsingController(sender: nil)
-        window?.makeKeyAndOrderFront(nil)
-        windowController?.showWindow(nil)
-    }
-
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
-    }
+        return mainMenu
+    }()
 
     // MARK: - Menu callbacks
 
@@ -77,22 +62,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSApp.terminate(nil)
     }
 
-    @objc func textPaste() {
+    @objc private func textPaste() {
         NSApp.sendAction(#selector(NSText.paste(_:)), to:nil, from:self)
-//        NotificationCenter.default.post(name: Notifications.applicationTextPaste.name, object: nil)
     }
 
-    @objc func textCut() {
+    @objc private func textCut() {
         NSApp.sendAction(#selector(NSText.cut(_:)), to:nil, from:self)
     }
 
-    @objc func textCopy() {
+    @objc private func textCopy() {
         NSApp.sendAction(#selector(NSText.copy(_:)), to:nil, from:self)
-//        NotificationCenter.default.post(name: Notifications.applicationTextCopy.name, object: nil)
     }
 
-    @objc func textSelectAll() {
+    @objc private func textSelectAll() {
         NSApp.sendAction(#selector(NSText.selectAll(_:)), to:nil, from:self)
-//        NotificationCenter.default.post(name: Notifications.applicationTextSelectAll.name, object: nil)
     }
 }
