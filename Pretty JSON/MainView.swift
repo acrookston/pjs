@@ -16,6 +16,8 @@ final class MainView: NSView {
         inputBackground.addSubview(inputView)
         outputBackground.addSubview(outputView)
         inputView.textView.delegate = delegate
+        addSubview(inputTitle)
+        addSubview(outputTitle)
         addSubview(inputBackground)
         addSubview(outputBackground)
         setupConstraints()
@@ -26,34 +28,67 @@ final class MainView: NSView {
         outputBackground.translatesAutoresizingMaskIntoConstraints = false
         inputView.translatesAutoresizingMaskIntoConstraints = false
         outputView.translatesAutoresizingMaskIntoConstraints = false
+        inputTitle.translatesAutoresizingMaskIntoConstraints = false
+        outputTitle.translatesAutoresizingMaskIntoConstraints = false
 
-        let padding: CGFloat = 10
+        let spacing: CGFloat = 10
+        let padding: CGFloat = 5
         NSLayoutConstraint.activate([
-            inputBackground.topAnchor.constraint(equalTo: self.topAnchor, constant: padding),
-            inputBackground.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -padding),
-            inputBackground.leftAnchor.constraint(equalTo: self.leftAnchor, constant: padding),
-            inputBackground.rightAnchor.constraint(equalTo: self.centerXAnchor, constant: -(padding / 2)),
+            inputTitle.topAnchor.constraint(equalTo: self.topAnchor, constant: spacing),
+            inputTitle.leftAnchor.constraint(equalTo: self.leftAnchor, constant: spacing),
+            inputTitle.rightAnchor.constraint(equalTo: self.centerXAnchor, constant: -padding),
 
-            inputView.topAnchor.constraint(equalTo: inputBackground.topAnchor, constant: (padding / 2)),
-            inputView.bottomAnchor.constraint(equalTo: inputBackground.bottomAnchor, constant: -(padding / 2)),
-            inputView.leftAnchor.constraint(equalTo: inputBackground.leftAnchor, constant: (padding / 2)),
-            inputView.rightAnchor.constraint(equalTo: inputBackground.rightAnchor, constant: -(padding / 2)),
+            outputTitle.topAnchor.constraint(equalTo: self.topAnchor, constant: spacing),
+            outputTitle.leftAnchor.constraint(equalTo: self.centerXAnchor, constant: padding),
+            outputTitle.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -spacing),
 
-            outputBackground.topAnchor.constraint(equalTo: self.topAnchor, constant: padding),
-            outputBackground.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -padding),
-            outputBackground.leftAnchor.constraint(equalTo: self.centerXAnchor, constant: (padding / 2)),
-            outputBackground.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -padding),
+            inputBackground.topAnchor.constraint(equalTo: inputTitle.bottomAnchor, constant: spacing),
+            inputBackground.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -spacing),
+            inputBackground.leftAnchor.constraint(equalTo: self.leftAnchor, constant: spacing),
+            inputBackground.rightAnchor.constraint(equalTo: self.centerXAnchor, constant: -padding),
 
-            outputView.topAnchor.constraint(equalTo: outputBackground.topAnchor, constant: (padding / 2)),
-            outputView.bottomAnchor.constraint(equalTo: outputBackground.bottomAnchor, constant: -(padding / 2)),
-            outputView.leftAnchor.constraint(equalTo: outputBackground.leftAnchor, constant: (padding / 2)),
-            outputView.rightAnchor.constraint(equalTo: outputBackground.rightAnchor, constant: -(padding / 2))
+            inputView.topAnchor.constraint(equalTo: inputBackground.topAnchor, constant: padding),
+            inputView.bottomAnchor.constraint(equalTo: inputBackground.bottomAnchor, constant: -padding),
+            inputView.leftAnchor.constraint(equalTo: inputBackground.leftAnchor, constant: padding),
+            inputView.rightAnchor.constraint(equalTo: inputBackground.rightAnchor, constant: -padding),
+
+            outputBackground.topAnchor.constraint(equalTo: outputTitle.bottomAnchor, constant: spacing),
+            outputBackground.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -spacing),
+            outputBackground.leftAnchor.constraint(equalTo: self.centerXAnchor, constant: padding),
+            outputBackground.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -spacing),
+
+            outputView.topAnchor.constraint(equalTo: outputBackground.topAnchor, constant: padding),
+            outputView.bottomAnchor.constraint(equalTo: outputBackground.bottomAnchor, constant: -padding),
+            outputView.leftAnchor.constraint(equalTo: outputBackground.leftAnchor, constant: padding),
+            outputView.rightAnchor.constraint(equalTo: outputBackground.rightAnchor, constant: -padding)
         ])
     }
 
     // MARK: - child view
 
-    let inputBackground: NSView = {
+    private let inputTitle: NSTextField = {
+        let view = NSTextField(frame: .zero)
+        view.isBezeled = false
+        view.isEditable = false
+        view.isSelectable = false
+        view.drawsBackground = false
+        view.font = .boldSystemFont(ofSize: NSFont.systemFontSize)
+        view.stringValue = NSLocalizedString("Input", comment: "input title")
+        return view
+    }()
+
+    private let outputTitle: NSTextField = {
+        let view = NSTextField(frame: .zero)
+        view.isBezeled = false
+        view.isEditable = false
+        view.isSelectable = false
+        view.drawsBackground = false
+        view.font = .boldSystemFont(ofSize: NSFont.systemFontSize)
+        view.stringValue = NSLocalizedString("Output", comment: "output title")
+        return view
+    }()
+
+    private let inputBackground: NSView = {
         let view = NSView(frame: .zero)
         view.wantsLayer = true
         view.layer?.borderColor = NSColor.lightGray.cgColor
@@ -62,7 +97,7 @@ final class MainView: NSView {
         return view
     }()
 
-    let outputBackground: NSView = {
+    private let outputBackground: NSView = {
         let view = NSView(frame: .zero)
         view.wantsLayer = true
         view.layer?.borderColor = NSColor.lightGray.cgColor
