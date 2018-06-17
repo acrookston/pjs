@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "Jay",
-        "repositoryURL": "https://github.com/czechboy0/Jay.git",
+        "repositoryURL": "https://github.com/DanToml/Jay",
         "state": {
           "branch": null,
           "revision": "833125251b2d026bee6afa0aff2967a90eb63cd0",
