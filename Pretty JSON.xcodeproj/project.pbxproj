@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A13AF8B51F8B2F22003AFB23 /* NSViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13AF8B41F8B2F21003AFB23 /* NSViewExtensions.swift */; };
 		A1B8B4A320D5DC5F001D066C /* ScrollingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8B4A220D5DC5F001D066C /* ScrollingTextView.swift */; };
 		A1B8B4A520D71C1D001D066C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8B4A420D71C1D001D066C /* MainView.swift */; };
 		C129DACE1F8572780007C8CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DACD1F8572780007C8CE /* AppDelegate.swift */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		0996F6AB8D6821FE3E244C21 /* Pods-Pretty JSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pretty JSON.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pretty JSON/Pods-Pretty JSON.debug.xcconfig"; sourceTree = "<group>"; };
 		95BE1EE7C9B43C7EAC798269 /* Pods-Pretty JSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pretty JSON.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pretty JSON/Pods-Pretty JSON.release.xcconfig"; sourceTree = "<group>"; };
-		A13AF8B41F8B2F21003AFB23 /* NSViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewExtensions.swift; sourceTree = "<group>"; };
 		A1B8B4A220D5DC5F001D066C /* ScrollingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingTextView.swift; sourceTree = "<group>"; };
 		A1B8B4A420D71C1D001D066C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C129DACA1F8572780007C8CE /* PJs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PJs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +91,6 @@
 				C129DAE01F8576E60007C8CE /* Parser.swift */,
 				C129DAE21F85774D0007C8CE /* MainViewController.swift */,
 				C129DAE41F85A62F0007C8CE /* Application.swift */,
-				A13AF8B41F8B2F21003AFB23 /* NSViewExtensions.swift */,
 				A1B8B4A220D5DC5F001D066C /* ScrollingTextView.swift */,
 				A1B8B4A420D71C1D001D066C /* MainView.swift */,
 			);
@@ -204,7 +201,6 @@
 				C129DAE51F85A62F0007C8CE /* Application.swift in Sources */,
 				A1B8B4A520D71C1D001D066C /* MainView.swift in Sources */,
 				A1B8B4A320D5DC5F001D066C /* ScrollingTextView.swift in Sources */,
-				A13AF8B51F8B2F22003AFB23 /* NSViewExtensions.swift in Sources */,
 				C129DAE31F85774D0007C8CE /* MainViewController.swift in Sources */,
 				C129DAE11F8576E60007C8CE /* Parser.swift in Sources */,
 				C129DACE1F8572780007C8CE /* AppDelegate.swift in Sources */,
