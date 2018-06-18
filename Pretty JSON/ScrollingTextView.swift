@@ -35,7 +35,7 @@ final class ScrollTextView: NSScrollView {
     }
 
     private func bestFont() -> NSFont {
-        if let font = NSFont(name: "IMBPlexMono-Regular", size: NSFont.systemFontSize) { return font }
+        if let font = NSFont(name: "IBMPlexMono", size: NSFont.systemFontSize) { return font }
         if let font = NSFont(name: "AndaleMono", size: NSFont.systemFontSize) { return font }
         if let font = NSFont(name: "PTMono-Regular", size: NSFont.systemFontSize) { return font }
         return NSFont.monospacedDigitSystemFont(ofSize: NSFont.systemFontSize, weight: .regular)

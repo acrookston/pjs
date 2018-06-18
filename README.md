@@ -26,9 +26,19 @@ If you're making a big change, please open an Issue first, so we can discuss. Ot
 - Make your changes and add tests (if possible).
 - Create a pull-request on Github.
 
-
 ## Author
 
 Andrew Crookston [@acr](https://twitter.com/acr)
 
 Tweet me if you like this library, have questions or feedback.
+
+## Releases
+
+All releases are coordinated and signed by CA Systems, owned by Andrew Crookston.
+
+## Licenses
+
+The application source code is released under MIT License.
+
+The application includes a font by IBM. See [LICENSE](LICENSE.md) for details.
+
