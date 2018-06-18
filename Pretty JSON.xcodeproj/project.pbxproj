@@ -11,7 +11,6 @@
 		A1B8B4A520D71C1D001D066C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8B4A420D71C1D001D066C /* MainView.swift */; };
 		C129DACE1F8572780007C8CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DACD1F8572780007C8CE /* AppDelegate.swift */; };
 		C129DAD01F8572780007C8CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C129DACF1F8572780007C8CE /* Assets.xcassets */; };
-		C129DADF1F8576C60007C8CE /* Jay.swiftmodule in Frameworks */ = {isa = PBXBuildFile; fileRef = C129DADE1F8576C60007C8CE /* Jay.swiftmodule */; };
 		C129DAE11F8576E60007C8CE /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DAE01F8576E60007C8CE /* Parser.swift */; };
 		C129DAE31F85774D0007C8CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DAE21F85774D0007C8CE /* MainViewController.swift */; };
 		C129DAE51F85A62F0007C8CE /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129DAE41F85A62F0007C8CE /* Application.swift */; };
@@ -30,7 +29,6 @@
 		C129DAD51F8572780007C8CE /* Pretty_JSON.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pretty_JSON.entitlements; sourceTree = "<group>"; };
 		C129DADB1F8574E30007C8CE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		C129DADC1F8574E80007C8CE /* Package.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Package.resolved; sourceTree = "<group>"; };
-		C129DADE1F8576C60007C8CE /* Jay.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; name = Jay.swiftmodule; path = ".build/x86_64-apple-macosx10.10/debug/Jay.swiftmodule"; sourceTree = "<group>"; };
 		C129DAE01F8576E60007C8CE /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		C129DAE21F85774D0007C8CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C129DAE41F85A62F0007C8CE /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
@@ -43,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C129DADF1F8576C60007C8CE /* Jay.swiftmodule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +97,6 @@
 		C129DADD1F8576C50007C8CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C129DADE1F8576C60007C8CE /* Jay.swiftmodule */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

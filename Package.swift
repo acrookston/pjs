@@ -3,15 +3,13 @@ import PackageDescription
 
 let package = Package(
     name: "Pretty JSON",
-    dependencies: [
-        .package(url: "https://github.com/DanToml/Jay", from: "1.0.1"),
-    ],
+    dependencies: [ ],
     targets: [
         .target(
             name: "Pretty JSON",
-            dependencies: ["Jay"]),
+            dependencies: []),
         .testTarget(
             name: "Pretty JSONTests",
-            dependencies: ["Pretty JSON"]),
+            dependencies: []),
     ]
 )
