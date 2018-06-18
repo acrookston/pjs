@@ -1,4 +1,4 @@
-[App Icon](assets/AppIcon.png)
+![App Icon](assets/AppIcon.png)
 
 # PJs - Pretty JSON
 
@@ -6,7 +6,7 @@ A simple, privacy minded macOS JSON formatter application. Making it easy to con
 
 Simply put your JSON into the Input box and select your output option.
 
-[Screen Shot](assets/screenshot.png)
+![Screen Shot](assets/screenshot.png)
 
 ## Installation
 
