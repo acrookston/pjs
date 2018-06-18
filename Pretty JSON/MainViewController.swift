@@ -8,7 +8,11 @@
 
 import AppKit
 
-final class MainViewController: NSViewController, NSTextViewDelegate {
+protocol ParserInputDelegate: class {
+    func parseText(input: String, mode: ParserMode)
+}
+
+final class MainViewController: NSViewController {
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     init(sender: Any?) { super.init(nibName: nil, bundle: nil) }
 
@@ -27,12 +31,8 @@ final class MainViewController: NSViewController, NSTextViewDelegate {
         let origin = CGPoint(x: (screen.width - size) / 2, y: (screen.height - size) / 2)
         let frameSize = CGSize(width: size, height: size)
         self.view.window?.setFrame(NSRect(origin: origin, size: frameSize), display: true)
-    }
 
-    // MARK: - NSTextViewDelegate
-
-    func textDidChange(_ notification: Notification) {
-        parseInputText()
+        mainView.inputView.becomeFirstResponder()
     }
 
     // MARK: - NotificationCenter
@@ -47,18 +47,28 @@ final class MainViewController: NSViewController, NSTextViewDelegate {
     @objc func textCopy() {
         NSPasteboard.general.declareTypes([.string], owner: nil)
         NSPasteboard.general.setString(mainView.outputView.textView.string, forType: .string)
-        print("Copied!")
     }
 
     // MARK: - actions
 
     private func parseInputText() {
-        Parser().parse(mainView.inputView.textView.string) { [weak self] result in
+        parseText(input: mainView.inputView.textView.string, mode: mainView.parsingMode)
+    }
+}
+
+extension MainViewController: ParserInputDelegate {
+    func parseText(input: String, mode: ParserMode) {
+        Parser().parse(input, mode: mode) { [weak self] result in
             switch result {
             case .success(let parsedString):
                 self?.mainView.outputView.textView.string = parsedString
             case .error(let error):
-                print("PARSE ERROR: \(error)")
+                switch error {
+                case ParserErrors.emptyString:
+                    self?.mainView.outputView.textView.string = ""
+                default:
+                    self?.mainView.outputView.textView.string = "PARSING ERROR:\n\n\(error.localizedDescription)"
+                }
             }
         }
     }

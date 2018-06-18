@@ -15,13 +15,17 @@ enum ParserErrors: Error {
     case stringEncoding
 }
 
+enum ParserMode {
+    case prettified, minified
+}
+
 enum ParserResult<T> {
     case success(T)
     case error(ParserErrors)
 }
 
 final class Parser {
-    func parse(_ text: String, _ callback: @escaping (ParserResult<String>) -> ()) {
+    func parse(_ text: String, mode: ParserMode, _ callback: @escaping (ParserResult<String>) -> ()) {
         if text.isEmpty {
             callback(.error(.emptyString))
             return
@@ -30,7 +34,13 @@ final class Parser {
         do {
             if let data = text.data(using: text.fastestEncoding) {
                 let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions())
-                let jsonData = try JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
+                let jsonData: Data
+                switch mode {
+                case .minified:
+                    jsonData = try JSONSerialization.data(withJSONObject: json, options: [])
+                case .prettified:
+                    jsonData = try JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
+                }
                 if let string = String(data: jsonData, encoding: .utf8) {
                     callback(.success(string))
                 } else {
