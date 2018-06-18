@@ -27,11 +27,9 @@ final class MainViewController: NSViewController {
     }
 
     override func viewDidAppear() {
-        let size: CGFloat = 800
         let screen = NSScreen.main?.frame.size ?? .zero
-        let origin = CGPoint(x: (screen.width - size) / 2, y: (screen.height - size) / 2)
-        let frameSize = CGSize(width: size, height: size)
-        self.view.window?.setFrame(NSRect(origin: origin, size: frameSize), display: true)
+        let origin = CGPoint(x: (screen.width - NSWindow.desiredSize.width) / 2, y: (screen.height - NSWindow.desiredSize.height) / 2)
+        self.view.window?.setFrame(NSRect(origin: origin, size: NSWindow.desiredSize), display: true)
 
         mainView.inputView.becomeFirstResponder()
     }
