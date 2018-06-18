@@ -1,4 +1,4 @@
-# PJs - Pretty JSON ![App Icon](assets/AppIcon64.png)
+# ![App Icon](assets/AppIcon64.png) PJs - Pretty JSON
 
 A simple, privacy minded macOS JSON formatter application. Making it easy to convert between minified and prettified JSON.
 
