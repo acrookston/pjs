@@ -24,6 +24,7 @@ final class MainView: NSView {
         addSubview(outputTitle)
         addSubview(inputBackground)
         addSubview(outputBackground)
+        addSubview(copyButton)
         setupConstraints()
     }
 
@@ -46,6 +47,7 @@ final class MainView: NSView {
         inputTitle.translatesAutoresizingMaskIntoConstraints = false
         outputTitle.translatesAutoresizingMaskIntoConstraints = false
         ouputSegmentControl.translatesAutoresizingMaskIntoConstraints = false
+        copyButton.translatesAutoresizingMaskIntoConstraints = false
 
         let spacing: CGFloat = 10
         let padding: CGFloat = 5
@@ -59,7 +61,10 @@ final class MainView: NSView {
 
             outputTitle.topAnchor.constraint(equalTo: ouputSegmentControl.bottomAnchor, constant: spacing),
             outputTitle.leftAnchor.constraint(equalTo: self.centerXAnchor, constant: padding),
-            outputTitle.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -spacing),
+            outputTitle.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.25, constant: 0),
+
+            copyButton.centerYAnchor.constraint(equalTo: outputTitle.centerYAnchor),
+            copyButton.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -spacing),
 
             inputBackground.topAnchor.constraint(equalTo: inputTitle.bottomAnchor, constant: spacing),
             inputBackground.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -spacing),
@@ -85,13 +90,17 @@ final class MainView: NSView {
 
     // MARK: - actions
 
-    @objc func didTapSegment(sender: NSSegmentedControl) {
+    @objc private func didTapSegment(sender: NSSegmentedControl) {
         switch sender.indexOfSelectedItem {
         case 0:
             parsingMode = .prettified
         default:
             parsingMode = .minified
         }
+    }
+
+    @objc private func didTapCopy(sender: NSButton) {
+        delegate?.copyOutput()
     }
 
     // MARK: - child view
@@ -148,6 +157,10 @@ final class MainView: NSView {
         view.layer?.backgroundColor = NSColor(calibratedRed: 224/255, green: 224/255, blue: 224/255, alpha: 1).cgColor
         return view
     }()
+
+    private lazy var copyButton: NSButton = NSButton(title: NSLocalizedString("Copy output", comment: "copy button"),
+                                                     target: self,
+                                                     action: #selector(didTapCopy))
 
     let inputView: ScrollTextView = {
         let scrollText = ScrollTextView(frame: .zero)

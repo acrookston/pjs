@@ -10,6 +10,7 @@ import AppKit
 
 protocol ParserInputDelegate: class {
     func parseText(input: String, mode: ParserMode)
+    func copyOutput()
 }
 
 final class MainViewController: NSViewController {
@@ -44,11 +45,6 @@ final class MainViewController: NSViewController {
         }
     }
 
-    @objc func textCopy() {
-        NSPasteboard.general.declareTypes([.string], owner: nil)
-        NSPasteboard.general.setString(mainView.outputView.textView.string, forType: .string)
-    }
-
     // MARK: - actions
 
     private func parseInputText() {
@@ -71,5 +67,10 @@ extension MainViewController: ParserInputDelegate {
                 }
             }
         }
+    }
+
+    func copyOutput() {
+        NSPasteboard.general.declareTypes([.string], owner: nil)
+        NSPasteboard.general.setString(mainView.outputView.textView.string, forType: .string)
     }
 }
