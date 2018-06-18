@@ -18,7 +18,7 @@ final class MainViewController: NSViewController {
 
     // MARK: - View loading
 
-    lazy var mainView = MainView(delegate: self)
+    private lazy var mainView = MainView(delegate: self)
 
     override func loadView() {
         // Prevents loading from nib
