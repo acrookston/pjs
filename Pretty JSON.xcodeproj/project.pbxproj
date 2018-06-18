@@ -18,8 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0996F6AB8D6821FE3E244C21 /* Pods-Pretty JSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pretty JSON.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pretty JSON/Pods-Pretty JSON.debug.xcconfig"; sourceTree = "<group>"; };
-		95BE1EE7C9B43C7EAC798269 /* Pods-Pretty JSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pretty JSON.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pretty JSON/Pods-Pretty JSON.release.xcconfig"; sourceTree = "<group>"; };
 		A1B8B4A220D5DC5F001D066C /* ScrollingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingTextView.swift; sourceTree = "<group>"; };
 		A1B8B4A420D71C1D001D066C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C129DACA1F8572780007C8CE /* PJs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PJs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,15 +45,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		76C8AC55E6CFDA4E3BA0B58E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0996F6AB8D6821FE3E244C21 /* Pods-Pretty JSON.debug.xcconfig */,
-				95BE1EE7C9B43C7EAC798269 /* Pods-Pretty JSON.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		C129DAC11F8572780007C8CE = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +53,6 @@
 				C129DACC1F8572780007C8CE /* Pretty JSON */,
 				C129DACB1F8572780007C8CE /* Products */,
 				C129DADD1F8576C50007C8CE /* Frameworks */,
-				76C8AC55E6CFDA4E3BA0B58E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,7 +96,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C129DAD81F8572780007C8CE /* Build configuration list for PBXNativeTarget "PJs" */;
 			buildPhases = (
-				E4E50D8A6A7BBEE8F2228F9E /* [CP] Check Pods Manifest.lock */,
 				C129DAC61F8572780007C8CE /* Sources */,
 				C129DAC71F8572780007C8CE /* Frameworks */,
 				C129DAC81F8572780007C8CE /* Resources */,
@@ -167,27 +154,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E4E50D8A6A7BBEE8F2228F9E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Pretty JSON-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C129DAC61F8572780007C8CE /* Sources */ = {
@@ -314,7 +280,6 @@
 		};
 		C129DAD91F8572780007C8CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0996F6AB8D6821FE3E244C21 /* Pods-Pretty JSON.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Pretty JSON/Pretty_JSON.entitlements";
@@ -331,7 +296,6 @@
 		};
 		C129DADA1F8572780007C8CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95BE1EE7C9B43C7EAC798269 /* Pods-Pretty JSON.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Pretty JSON/Pretty_JSON.entitlements";
